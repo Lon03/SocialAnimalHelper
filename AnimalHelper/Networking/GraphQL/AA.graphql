@@ -1,0 +1,34 @@
+
+query loginQuery($loginUser: LoginUserInput!) {
+login(user: $loginUser) {
+token
+user {
+username
+email
+}
+}
+}
+
+mutation CreateUser($createUserInput: CreateUserInput!) {
+createUser(createUserInput: $createUserInput) {
+username
+email
+}
+}
+
+query refreshToken {
+  refreshToken
+}
+
+query users {
+  users {
+    username
+    email
+  }
+}
+
+query user($email: String!) {
+user(email: $email) {
+  username
+}
+}

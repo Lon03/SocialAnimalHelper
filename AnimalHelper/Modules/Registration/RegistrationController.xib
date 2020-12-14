@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RegistrationController" customModule="AnimalHelper" customModuleProvider="target">
+            <connections>
+                <outlet property="saveBtn" destination="L3H-uF-nDd" id="Vqx-5I-lKH"/>
+                <outlet property="tableView" destination="6Nn-WP-43U" id="hoe-tm-KWu"/>
+                <outlet property="titleLabel" destination="9Fn-fH-1b7" id="6da-5o-e70"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="6Nn-WP-43U">
+                    <rect key="frame" x="16" y="138" width="288" height="305"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="305" id="h7A-M1-3nQ"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрация" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Fn-fH-1b7">
+                    <rect key="frame" x="16" y="76" width="288" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="Tkh-pk-HEN"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                    <color key="textColor" red="0.00024469222989864647" green="0.79235690832138062" blue="0.61684578657150269" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L3H-uF-nDd" customClass="RootButton" customModule="AnimalHelper" customModuleProvider="target">
+                    <rect key="frame" x="16" y="451" width="288" height="56"/>
+                    <color key="backgroundColor" red="0.00024469222989999999" green="0.79235690830000005" blue="0.6168457866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="Eza-vb-W0R"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Подтвердить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBtn:" destination="-1" eventType="touchUpInside" id="eHc-b8-vxm"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPs-xp-abZ">
+                    <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="50" id="1BQ-QN-pSz"/>
+                        <constraint firstAttribute="height" constant="50" id="uU3-CV-jgC"/>
+                    </constraints>
+                    <state key="normal" image="Back"/>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="o2J-uX-lh8"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HPs-xp-abZ" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="30" id="6Vw-Th-k6b"/>
+                <constraint firstItem="9Fn-fH-1b7" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="76" id="BgV-M6-vaq"/>
+                <constraint firstItem="6Nn-WP-43U" firstAttribute="top" secondItem="9Fn-fH-1b7" secondAttribute="bottom" constant="28" id="CL6-mN-4ET"/>
+                <constraint firstItem="6Nn-WP-43U" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="CUg-c1-yCp"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="9Fn-fH-1b7" secondAttribute="trailing" constant="16" id="HdB-Nt-NtP"/>
+                <constraint firstItem="9Fn-fH-1b7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="RD2-jK-Q2Z"/>
+                <constraint firstItem="L3H-uF-nDd" firstAttribute="top" secondItem="6Nn-WP-43U" secondAttribute="bottom" constant="8" id="WHa-QU-5qw"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="6Nn-WP-43U" secondAttribute="trailing" constant="16" id="X5R-YX-FS5"/>
+                <constraint firstItem="L3H-uF-nDd" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="Z7s-vw-nw1"/>
+                <constraint firstItem="HPs-xp-abZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="anH-TF-vO5"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="L3H-uF-nDd" secondAttribute="trailing" constant="16" id="cAt-X6-i2p"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <point key="canvasLocation" x="63.75" y="55.985915492957744"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="50" height="50"/>
+    </resources>
+</document>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginController" customModule="AnimalHelper" customModuleProvider="target">
+            <connections>
+                <outlet property="saveBtn" destination="0CB-GW-MXV" id="H5R-ak-Fvg"/>
+                <outlet property="tableView" destination="Sqc-VC-fU2" id="jQ8-IU-izp"/>
+                <outlet property="titleLabel" destination="iRQ-Qc-bLc" id="bVC-Lt-ePN"/>
+                <outlet property="view" destination="WPn-Zl-xyr" id="pcf-36-4Vl"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="WPn-Zl-xyr">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="Sqc-VC-fU2">
+                    <rect key="frame" x="16" y="138" width="288" height="305"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="305" id="VwP-n2-fRC"/>
+                    </constraints>
+                </tableView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вход" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iRQ-Qc-bLc">
+                    <rect key="frame" x="16" y="76" width="288" height="34"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="34" id="3m5-G8-c60"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" weight="medium" pointSize="28"/>
+                    <color key="textColor" red="0.00024469222989999999" green="0.79235690830000005" blue="0.6168457866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0CB-GW-MXV" customClass="RootButton" customModule="AnimalHelper" customModuleProvider="target">
+                    <rect key="frame" x="16" y="451" width="288" height="56"/>
+                    <color key="backgroundColor" red="0.00024469222989999999" green="0.79235690830000005" blue="0.6168457866" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="56" id="7Nv-CW-msC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                    <state key="normal" title="Подтвердить">
+                        <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="saveBtn:" destination="-1" eventType="touchUpInside" id="c9h-j2-qKV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VFh-7k-6HF">
+                    <rect key="frame" x="0.0" y="30" width="50" height="50"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="50" id="Sja-Bz-9N4"/>
+                        <constraint firstAttribute="width" constant="50" id="pLI-FF-oPs"/>
+                    </constraints>
+                    <state key="normal" image="Back"/>
+                    <connections>
+                        <action selector="backBtn:" destination="-1" eventType="touchUpInside" id="WEG-EE-58X"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="Sqc-VC-fU2" firstAttribute="top" secondItem="iRQ-Qc-bLc" secondAttribute="bottom" constant="28" id="2jB-Qj-4zY"/>
+                <constraint firstItem="VFh-7k-6HF" firstAttribute="leading" secondItem="jaA-8u-nvz" secondAttribute="leading" id="3WL-mz-Srp"/>
+                <constraint firstItem="VFh-7k-6HF" firstAttribute="top" secondItem="jaA-8u-nvz" secondAttribute="top" constant="30" id="5ZX-mx-hRC"/>
+                <constraint firstItem="iRQ-Qc-bLc" firstAttribute="leading" secondItem="jaA-8u-nvz" secondAttribute="leading" constant="16" id="60I-Mj-g6D"/>
+                <constraint firstItem="jaA-8u-nvz" firstAttribute="trailing" secondItem="Sqc-VC-fU2" secondAttribute="trailing" constant="16" id="KDe-NU-5pT"/>
+                <constraint firstItem="Sqc-VC-fU2" firstAttribute="leading" secondItem="jaA-8u-nvz" secondAttribute="leading" constant="16" id="QiD-sR-5Cl"/>
+                <constraint firstItem="jaA-8u-nvz" firstAttribute="trailing" secondItem="iRQ-Qc-bLc" secondAttribute="trailing" constant="16" id="SZp-Tg-2wG"/>
+                <constraint firstItem="0CB-GW-MXV" firstAttribute="leading" secondItem="jaA-8u-nvz" secondAttribute="leading" constant="16" id="TzE-vh-Npx"/>
+                <constraint firstItem="iRQ-Qc-bLc" firstAttribute="top" secondItem="jaA-8u-nvz" secondAttribute="top" constant="76" id="ZYd-9o-OSI"/>
+                <constraint firstItem="jaA-8u-nvz" firstAttribute="trailing" secondItem="0CB-GW-MXV" secondAttribute="trailing" constant="16" id="pbC-mC-GR9"/>
+                <constraint firstItem="0CB-GW-MXV" firstAttribute="top" secondItem="Sqc-VC-fU2" secondAttribute="bottom" constant="8" id="tQC-mr-iy9"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="jaA-8u-nvz"/>
+            <point key="canvasLocation" x="63.75" y="55.985915492957744"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Back" width="50" height="50"/>
+    </resources>
+</document>
