@@ -2,9 +2,9 @@
   <img src="https://github.com/Lon03/SocialAnimalHelper/blob/main/screenshots/logos.svg" alt="AnimalHelper logo" height="80" >
 </p>
 
-<p align="center">
+<h1 align="center">
     App for finding missing animals
-</p>
+</h1>
 
 ## Content
 - [Screenshots](#screenshots)
