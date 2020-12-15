@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://github.com/Lon03/SocialAnimalHelper/blob/main/screenshots/logo.png" alt="AnimalHelper logo" height="80" >
+  <img src="https://github.com/Lon03/SocialAnimalHelper/blob/main/screenshots/logos.svg" alt="AnimalHelper logo" height="80" >
 </p>
 
 <p align="center">
