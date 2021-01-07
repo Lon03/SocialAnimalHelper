@@ -70,6 +70,10 @@
 		8792D70D2393D6BA00B1D8BB /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8792D70C2393D6BA00B1D8BB /* User.swift */; };
 		87A3AE6723906E5E00B06084 /* Api.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3AE6623906E5E00B06084 /* Api.swift */; };
 		87A3AE6E23906EB500B06084 /* GraphApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A3AE6D23906EB500B06084 /* GraphApi.swift */; };
+		87AFB3EE25A79F4B00AD5F59 /* FilterController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AFB3EC25A79F4B00AD5F59 /* FilterController.swift */; };
+		87AFB3EF25A79F4B00AD5F59 /* FilterController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87AFB3ED25A79F4B00AD5F59 /* FilterController.xib */; };
+		87AFB3F225A79F6000AD5F59 /* FilterContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AFB3F125A79F6000AD5F59 /* FilterContract.swift */; };
+		87AFB3F525A79F6F00AD5F59 /* FilterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87AFB3F425A79F6F00AD5F59 /* FilterPresenter.swift */; };
 		87B817B82587D42800297D70 /* ButtonCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 87B817B62587D3F900297D70 /* ButtonCell.xib */; };
 		87B817B92587D42800297D70 /* ButtonCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B817B72587D42800297D70 /* ButtonCell.swift */; };
 		87B817BD2587D4B100297D70 /* InfoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87B817BB2587D48A00297D70 /* InfoCell.swift */; };
@@ -154,6 +158,10 @@
 		8792D70C2393D6BA00B1D8BB /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		87A3AE6623906E5E00B06084 /* Api.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Api.swift; sourceTree = "<group>"; };
 		87A3AE6D23906EB500B06084 /* GraphApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GraphApi.swift; sourceTree = "<group>"; };
+		87AFB3EC25A79F4B00AD5F59 /* FilterController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterController.swift; sourceTree = "<group>"; };
+		87AFB3ED25A79F4B00AD5F59 /* FilterController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FilterController.xib; sourceTree = "<group>"; };
+		87AFB3F125A79F6000AD5F59 /* FilterContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterContract.swift; sourceTree = "<group>"; };
+		87AFB3F425A79F6F00AD5F59 /* FilterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterPresenter.swift; sourceTree = "<group>"; };
 		87B817B62587D3F900297D70 /* ButtonCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ButtonCell.xib; sourceTree = "<group>"; };
 		87B817B72587D42800297D70 /* ButtonCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonCell.swift; sourceTree = "<group>"; };
 		87B817BB2587D48A00297D70 /* InfoCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InfoCell.swift; sourceTree = "<group>"; };
@@ -350,6 +358,7 @@
 		8792D6D0239309F300B1D8BB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				87AFB3EB25A79F3100AD5F59 /* Filter */,
 				8725FEE8239476EB0046C1FF /* Settings */,
 				8725FED92394620E0046C1FF /* Login */,
 				8725FED22394545A0046C1FF /* Home */,
@@ -482,6 +491,17 @@
 				8725FF0F2397042D0046C1FF /* schema.json */,
 			);
 			path = GraphQL;
+			sourceTree = "<group>";
+		};
+		87AFB3EB25A79F3100AD5F59 /* Filter */ = {
+			isa = PBXGroup;
+			children = (
+				87AFB3EC25A79F4B00AD5F59 /* FilterController.swift */,
+				87AFB3ED25A79F4B00AD5F59 /* FilterController.xib */,
+				87AFB3F125A79F6000AD5F59 /* FilterContract.swift */,
+				87AFB3F425A79F6F00AD5F59 /* FilterPresenter.swift */,
+			);
+			name = Filter;
 			sourceTree = "<group>";
 		};
 		87B817B22587D33700297D70 /* ButtonCell */ = {
@@ -619,6 +639,7 @@
 				87B817D72588159200297D70 /* Appfile in Resources */,
 				8725FED62394547E0046C1FF /* HomeController.xib in Resources */,
 				87B817E52588178900297D70 /* README.md in Resources */,
+				87AFB3EF25A79F4B00AD5F59 /* FilterController.xib in Resources */,
 				8792D6F22393220F00B1D8BB /* RegistrationController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -702,6 +723,7 @@
 				8792D6B323908AD100B1D8BB /* Token.swift in Sources */,
 				87B817BD2587D4B100297D70 /* InfoCell.swift in Sources */,
 				871D79FD2587B5E7002EFE9C /* InitialPresenter.swift in Sources */,
+				87AFB3F225A79F6000AD5F59 /* FilterContract.swift in Sources */,
 				8725FEE523946A740046C1FF /* UserAvatar.swift in Sources */,
 				87A3AE6E23906EB500B06084 /* GraphApi.swift in Sources */,
 				871D7A052587B794002EFE9C /* LoginPresenter.swift in Sources */,
@@ -711,6 +733,7 @@
 				871D7A1E2587C4B0002EFE9C /* NameDescribable.swift in Sources */,
 				87B817C22587D51000297D70 /* SwitchCell.swift in Sources */,
 				871D7A192587C23E002EFE9C /* HomeContract.swift in Sources */,
+				87AFB3EE25A79F4B00AD5F59 /* FilterController.swift in Sources */,
 				8725FF0C2396FF5C0046C1FF /* load.swift in Sources */,
 				8725FF002395B91E0046C1FF /* UIButton+AnimalHelper.swift in Sources */,
 				8725FF032395B98B0046C1FF /* RootButton.swift in Sources */,
@@ -734,6 +757,7 @@
 				871D7A0F2587BEC6002EFE9C /* RegistrationContract.swift in Sources */,
 				871D79EB2587AEF7002EFE9C /* SettingsContract.swift in Sources */,
 				8792D6F82393360B00B1D8BB /* TextField.swift in Sources */,
+				87AFB3F525A79F6F00AD5F59 /* FilterPresenter.swift in Sources */,
 				8733D43F2340F2F3008A1D4B /* AppDelegate.swift in Sources */,
 				8792D6B623908B0800B1D8BB /* AuthManager.swift in Sources */,
 				876477C12399CC8600D3C6E6 /* SettingsController.swift in Sources */,
